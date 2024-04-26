@@ -35,7 +35,8 @@ class MainActivity : ComponentActivity() {
                 ) {
                     GreetingImage(
                         message = "Happy Birthday Sis!",
-                        from = "From Your brother"
+                        from = "From Your brother",
+                        modifier = Modifier.padding(8.dp)
                     )
                 }
             }
@@ -61,7 +62,7 @@ fun GreetingText(message: String, from: String, modifier: Modifier = Modifier) {
             lineHeight = 45.sp,
             modifier = Modifier
                 .padding(16.dp)
-                .align(alignment = Alignment.Start),
+                .align(alignment = Alignment.CenterHorizontally),
         )
     }
 }
